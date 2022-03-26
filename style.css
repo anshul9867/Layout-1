@@ -3,7 +3,7 @@
     padding: 0px;
 }
 .container{
-  padding: 10vh;
+  padding: 4rem;
 }
 .topnav {
     background-color: #333;
@@ -26,15 +26,19 @@
   .line{
    border-color: rgb(255 255 255);
   }
+  .text{
+    width: 21vw;
+  }
   
 .head{
   font-family: sans-serif;  
-      font-weight: 545;
+      font-weight: 540;
   }
 .para{
   font-family: sans-serif;
-    margin-top: -3vh;
-    margin-left: 13vw;
+    margin-top: -1.3rem;
+    /* margin-left: 14rem; */
+    float: right;
     color: rgb(102, 99, 99);
   }
   .anchor{
@@ -66,46 +70,72 @@
     font-family: sans-serif;
     font-size: 12px;
     padding-top: 6vh;
+    padding-left: 1rem;
     color: grey;
   }
 
-  /* @media screen and (max-width: 400px){
-    .first{
-      width: 195px !important;
-    }
-  } */
-  @media(min-width:370px )and (max-width: 470px){
-    .first{
-      padding-right: 20rem;
-      width: 195px !important;
+  @media(min-width:350px)and (max-width:1219px){
+    .para2{
+      padding-bottom: 10px;
     }
   }
-  
-  @media screen and (max-width:500px){
+
+  @media only screen and (max-width: 500px) {
+
     .first{
-      width: 100%;
-      text-align: start;
+      /* margin-left: -37px;
+    width: 150px !important;
+    text-align: start; */
+    padding-left: 10px !important  ;
+
     }
-    .head2{
-      text-align: center;
+    .container{
+      padding: 0rem;
     }
     .para2{
-      text-align: center;
+      padding-bottom: 2rem;
+    }
+    .head{
+      font-size: 20px;
+      padding-top: 2rem;
+      padding-left: 1.5rem;
+    }
+    .para{
+      float: none;
+      padding-top: 2rem;
+      font-size: 12px;
+      padding-left: 1.5rem;
+      padding-bottom: 0.5rem;
+    }
+    .text{
+      width:100%;
+    }
+    .line{
+      margin-left: 6px;
+      margin-right: 6px;
+    }
+    .footer{
+      padding:10px !important;
+    }
+    .topnav a{
+      padding: 14px 8px;
+    }
+    .anchor{
+      padding-left: 16px;
     }
   }
-
-        @media screen and (max-width: 1000px) {
-            .para{
-              margin-top: 1vh;
-              margin-left: 2vw;
-            }
-        }
-
-        
-        @media(min-width:1000px )and (max-width: 1247px){
-          .para{
-            padding-left:2vw ;
-            margin-top: -7vh;
-          }
-        }
-       
+  /* @media(min-width:350px)and(max-width:506px){
+   
+  } */
+@media (min-width:500px)and (max-width:1672px){
+  .para{
+    float:none;
+    margin-left: 10rem;
+  }
+  .text{
+    width: 100%;
+  }
+}
+  
+  
+ 
