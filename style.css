@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 .container{
   padding: 4rem;
@@ -26,6 +27,9 @@
   .line{
    border-color: rgb(255 255 255);
   }
+  .line2{
+    margin-top: 20px;
+  }
   .text{
     width: 21vw;
   }
@@ -40,17 +44,36 @@
     /* margin-left: 14rem; */
     float: right;
     color: rgb(102, 99, 99);
+    margin-bottom: 4px;
   }
   .anchor{
     padding-left: 7vh;
   }
   .boxes{
     text-align: center;
+    padding-bottom: 10px;
+    width: 100%;
+    
+  }
+  .imgdesign{
+    width: 100%;
   }
   .first {
     text-align: center; 
-    display: inline-block;
-   padding: 0vh 2vh;
+  
+   padding-bottom: 10px;
+   float: left;
+   width: calc(91%/3);
+   }
+   .first1{
+   margin-right:23px ;
+   }
+   .first2{
+   margin-left:23px;
+   }
+   .first3{
+     margin-left: 23px;
+     margin-right: 23px;
    }
    .head2{
      color:rgb(105, 182, 201);
@@ -59,6 +82,7 @@
      font-weight: 550;
      font-size: 16px;
      line-height: 6vh;
+     
    }
   .para2{
     color: grey;
@@ -69,9 +93,13 @@
   .footer{
     font-family: sans-serif;
     font-size: 12px;
-    padding-top: 6vh;
-    padding-left: 1rem;
+    padding-top: 2rem;
+    padding-left: 3rem;
+    border-top: 1px solid rgb(153, 151, 151);
+    padding-bottom: 2rem;
     color: grey;
+    float: left;
+    clear: both;
   }
 
   @media(min-width:350px)and (max-width:1219px){
@@ -79,15 +107,32 @@
       padding-bottom: 10px;
     }
   }
+  
 
+ 
   @media only screen and (max-width: 500px) {
+    .boxes{ 
+      padding-bottom: 0px;
+      width: 100%;
+    }
 
     .first{
-      /* margin-left: -37px;
-    width: 150px !important;
-    text-align: start; */
-    padding-left: 10px !important  ;
-
+    text-align: center; 
+    padding-left: 21px !important  ;
+    width: 100%;
+    }
+    .first1{
+      margin-right: 0px;
+      padding-right: 14px;
+    }
+    .first2{
+      margin-left: 0px;
+      padding-right: 14px;
+    }
+    .first3{
+      margin-left: 0px;
+      margin-right: 0px;
+      padding-right: 14px;
     }
     .container{
       padding: 0rem;
@@ -111,8 +156,8 @@
       width:100%;
     }
     .line{
-      margin-left: 6px;
-      margin-right: 6px;
+      margin-left: 10px;
+      margin-right: 10px;
     }
     .footer{
       padding:10px !important;
@@ -124,9 +169,24 @@
       padding-left: 16px;
     }
   }
-  /* @media(min-width:350px)and(max-width:506px){
-   
-  } */
+ 
+@media (min-width:500px)and (max-width:1150px){
+  .first1{
+    margin-right: 0px;
+  }
+  .first2{
+    margin-right: 23px;
+    margin-left: 0px;
+  }
+  .first3{
+    margin-left: 20px; 
+    margin-right: 20px;
+  }
+  .first{
+    width:calc(84%/2);
+  }
+}
+  
 @media (min-width:500px)and (max-width:1672px){
   .para{
     float:none;
@@ -136,6 +196,3 @@
     width: 100%;
   }
 }
-  
-  
- 
