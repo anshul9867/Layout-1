@@ -28,8 +28,10 @@
    border-color: rgb(255 255 255);
   }
   .line2{
-    margin-top: 20px;
+    width: 90%;
+     margin-left: 67px; 
   }
+  
   .text{
     width: 21vw;
   }
@@ -41,19 +43,17 @@
 .para{
   font-family: sans-serif;
     margin-top: -1.3rem;
-    /* margin-left: 14rem; */
     float: right;
     color: rgb(102, 99, 99);
     margin-bottom: 4px;
   }
   .anchor{
-    padding-left: 7vh;
+    padding-left: 4rem;
   }
   .boxes{
     text-align: center;
     padding-bottom: 10px;
     width: 100%;
-    
   }
   .imgdesign{
     width: 100%;
@@ -68,10 +68,10 @@
    .first1{
    margin-right:23px ;
    }
-   .first2{
+   .first3{
    margin-left:23px;
    }
-   .first3{
+   .first2{
      margin-left: 23px;
      margin-right: 23px;
    }
@@ -93,9 +93,12 @@
   .footer{
     font-family: sans-serif;
     font-size: 12px;
+    /* margin-top: 1rem; */
     padding-top: 2rem;
-    padding-left: 3rem;
-    border-top: 1px solid rgb(153, 151, 151);
+    padding-left: 4rem;
+    /* border-top: 1px solid rgb(153, 151, 151) ; */
+    /* margin-left: 4rem; */
+    width: 100%;
     padding-bottom: 2rem;
     color: grey;
     float: left;
@@ -107,9 +110,6 @@
       padding-bottom: 10px;
     }
   }
-  
-
- 
   @media only screen and (max-width: 500px) {
     .boxes{ 
       padding-bottom: 0px;
@@ -127,13 +127,14 @@
     }
     .first2{
       margin-left: 0px;
+      margin-right: 0px;
       padding-right: 14px;
     }
     .first3{
       margin-left: 0px;
-      margin-right: 0px;
       padding-right: 14px;
     }
+   
     .container{
       padding: 0rem;
     }
@@ -159,8 +160,12 @@
       margin-left: 10px;
       margin-right: 10px;
     }
+    .line2{
+      width: 89%;
+       margin: 0 auto; 
+    }
     .footer{
-      padding:10px !important;
+      padding:18px !important;
     }
     .topnav a{
       padding: 14px 8px;
@@ -172,19 +177,29 @@
  
 @media (min-width:500px)and (max-width:1150px){
   .first1{
-    margin-right: 0px;
+    
+    padding: 0px 10px;
+    margin: 0;
   }
+  
   .first2{
-    margin-right: 23px;
-    margin-left: 0px;
+    
+    padding: 0px 10px;
+    margin: 0;
   }
   .first3{
-    margin-left: 20px; 
-    margin-right: 20px;
+    padding: 0px 10px;
+    margin: 0;
+
   }
-  .first{
-    width:calc(84%/2);
+  .line{
+    padding: 0 10px;
   }
+  .line2{
+    width: 89%;
+     margin: 0 auto; 
+  }
+ 
 }
   
 @media (min-width:500px)and (max-width:1672px){
@@ -194,5 +209,24 @@
   }
   .text{
     width: 100%;
+    /* padding: 0 10px; */
+  }
+}
+@media (min-width:500px)and (max-width:672px){
+  .line2{
+    width:78%;
+    margin: 0 auto;
+  }
+}
+@media (min-width:1436px)and (max-width:1672px){
+.first{
+  width:calc(93%/3)
+}
+}
+
+@media (min-width:500px)and (max-width:1150px){
+  .first{
+    /* width:calc(89%/2); */
+    width:50%;
   }
 }
